@@ -44,7 +44,7 @@ To get the project running locally, follow these steps.
 - A running PostgreSQL instance
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/warevista/url-shortener-warevista.git
+git clone https://github.com/warevista/url-shortener.git
 cd <project-directory>
     cd url-shortener-backend
     npm install
