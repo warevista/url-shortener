@@ -1,5 +1,5 @@
 # URL Shortener Full-Stack Application
-This project is a complete URL shortener application built as a technical task to demonstrate proficiency in modern full-stack development. It consists of a robust backend API built with Node.js, NestJS, and PostgreSQL, and a clean, user-friendly frontend built with React, Next.js, and TypeScript.
+Consists of a robust backend API built with Node.js, NestJS, and PostgreSQL, and a user-friendly frontend built with React, Next.js, and TypeScript.
 The application allows users to submit a long URL, receive a unique shortened link, and track the number of visits to that link.
 ## Features Implemented
 This project successfully implements all core requirements and several extra credit features from the task description.
@@ -22,7 +22,7 @@ This project successfully implements all core requirements and several extra cre
 - [ ] **Analytics Dashboard:** Not implemented (though the list page serves as a basic version).
 - [ ] **Dockerization:** Not implemented.
 ## Tech Stack
-The project is split into two main parts, each with its own modern technology stack.
+The project is split into two main parts, each with its own stack.
 #### Backend (`url-shortener-backend`)
 - **Framework:** NestJS
 - **Language:** TypeScript
@@ -44,19 +44,19 @@ To get the project running locally, follow these steps.
 - A running PostgreSQL instance
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/warevista/url-shortener-warevista.git
 cd <project-directory>
     cd url-shortener-backend
     npm install
     -- Create a user (replace with a strong password)
-    CREATE ROLE your_db_user WITH LOGIN PASSWORD 'your_strong_password';
+    CREATE ROLE your_db_user WITH LOGIN PASSWORD 'your_password';
     -- Create the database and assign ownership
     CREATE DATABASE url_shortener_db OWNER your_db_user;
     cp .env.example .env
     DB_HOST=localhost
     DB_PORT=5432
     DB_USERNAME=your_db_user
-    DB_PASSWORD=your_strong_password
+    DB_PASSWORD=your_password
     DB_DATABASE=url_shortener_db
     npm run start:dev
     cd url-shortener-frontend
